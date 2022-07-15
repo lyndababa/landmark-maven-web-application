@@ -36,11 +36,6 @@
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
-		<dependency>
-                   <groupId>com.mt</groupId>
-                   <artifactId>maven-web-application</artifactId>
-                   <version>0.0.1-20220620.163809-9</version>
-                </dependency>
 		
 		<!-- test dependencies -->
 		<dependency>
