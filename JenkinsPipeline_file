@@ -7,13 +7,14 @@ node{
  stage('2Test&Build'){
     sh "${mavenHome}/bin/mvn install"
  } 
- /*
+ 
  stage('3CodeQuality'){
   sh "${mavenHome}/bin/mvn sonar:sonar"
  }   
  stage('4UploadArtifacts'){
   sh "${mavenHome}/bin/mvn deploy"
- } 
+ }
+ /*
  stage( '5deply_uat'){
   deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://3.85.123.113:8080/')], contextPath: null, war: 'target/*war'
   }
